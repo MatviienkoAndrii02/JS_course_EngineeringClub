@@ -7,7 +7,10 @@ console.log(typeof BigInt(123))
 console.log(typeof Symbol('a'))
 console.log(typeof true)
 
-const person = {firstName:"John", lastName:"Doe"}
+const person = {
+    firstName:"John",
+    lastName:"Doe"
+}
 console.log(typeof person)
 console.log(typeof null)
 
