@@ -18,13 +18,8 @@ console.log(twoSum([2, 7, 11, 15], 26));
 // You can return the answer in any order.
 
 var lengthOfLastWord = function (s) {
-  let words = s.split(" ");
-  for (let i = words.length - 1; i >= 0; i--) {
-    if (words[i].length > 0) {
-      return words[i].length;
-    }
-  }
-  return 0;
+  let words = s.trim().split(" ");
+    return words[words.length-1].length
 };
 
 console.log(lengthOfLastWord("Hello World"));
