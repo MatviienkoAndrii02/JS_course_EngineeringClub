@@ -41,7 +41,7 @@ test("F.ua support is visible", async ({ page }) => {
   await fUaPage.goto();
 
   await fUaPage.supportButton.isVisible();
-  await fUaPage.supportButton.click()
+  await fUaPage.supportButton.click();
   await fUaPage.nameInput.isVisible();
   await fUaPage.phonNumnerInput.isVisible();
   await fUaPage.waitCallButton.isVisible();
@@ -52,8 +52,8 @@ test("F.ua support is visible", async ({ page }) => {
 test("F.ua footer is visible", async ({ page }) => {
   let fUaPage = new FuaPage(page);
   await fUaPage.goto();
-  await fUaPage.footerSocial.scrollIntoViewIfNeeded()
-  
+  await fUaPage.footerSocial.scrollIntoViewIfNeeded();
+
   await fUaPage.footer.isVisible();
   await fUaPage.footerContacts.isVisible();
   await fUaPage.footerInfo.isVisible();
@@ -70,8 +70,8 @@ test("Allo navigation is visible", async ({ page }) => {
   await alloPage.search.isVisible();
   await alloPage.searchButton.isVisible();
   await alloPage.cart.isVisible();
-  await alloPage.favorite.isVisible()
-  await alloPage.logIn.isVisible()
+  await alloPage.favorite.isVisible();
+  await alloPage.logIn.isVisible();
 });
 
 test("Allo toolbar is visible", async ({ page }) => {
@@ -92,34 +92,32 @@ test("Allo main content is visible", async ({ page }) => {
   await alloPage.banner.isVisible();
   await alloPage.homeBanner.isVisible();
   await alloPage.homeCategories.isVisible();
-  await alloPage.leadersOfSelling.scrollIntoViewIfNeeded()
+  await alloPage.leadersOfSelling.scrollIntoViewIfNeeded();
   await alloPage.leadersOfSelling.isVisible();
-  await alloPage.newProducts.scrollIntoViewIfNeeded()
+  await alloPage.newProducts.scrollIntoViewIfNeeded();
   await alloPage.newProducts.isVisible();
 });
 
 test("Allo footer is visible", async ({ page }) => {
   let alloPage = new AlloPage(page);
   await alloPage.goto();
-  await alloPage.footerAppsList.scrollIntoViewIfNeeded()
+  await alloPage.footerAppsList.scrollIntoViewIfNeeded();
 
   await alloPage.footer.isVisible();
   await alloPage.footerEmail.isVisible();
   await alloPage.footerSubscribe.isVisible();
-  await alloPage.footerSocial.isVisible()
+  await alloPage.footerSocial.isVisible();
   await alloPage.footerAppsList.isVisible();
-
 });
 
 test("Allo footer info is visible", async ({ page }) => {
   let alloPage = new AlloPage(page);
   await alloPage.goto();
-  await alloPage.footerAllo.scrollIntoViewIfNeeded()
+  await alloPage.footerAllo.scrollIntoViewIfNeeded();
 
   await alloPage.footerAllo.isVisible();
   await alloPage.footerInfo.isVisible();
   await alloPage.footerBenefits.isVisible();
-  await alloPage.footerComfort.isVisible()
+  await alloPage.footerComfort.isVisible();
   await alloPage.footerBussines.isVisible();
-
 });

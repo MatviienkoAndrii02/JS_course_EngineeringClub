@@ -24,7 +24,6 @@ export class AlloPage {
   readonly footerSubscribe: Locator;
   readonly footerSocial: Locator;
   readonly footerAppsList: Locator;
-
   readonly footerAllo: Locator;
   readonly footerInfo: Locator;
   readonly footerBenefits: Locator;
@@ -60,8 +59,6 @@ export class AlloPage {
     this.footerBenefits = page.getByText('Вигода АЛЛО Гроші Fishka')
     this.footerComfort = page.getByText('Комфорт АЛЛО Експерт Онлайн АЛЛО Сервіси Аудіокниги АЛЛО Бібліотека')
     this.footerBussines = page.getByText('Бізнес АЛЛО Маркетплейс Стати партнером Кабінет партнера Корпоративний відділ')
-
-    
   }
 
   async goto() {
