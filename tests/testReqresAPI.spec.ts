@@ -32,7 +32,7 @@ test('POST create user', async ({ request }) => {
         "name": "morpheus",
         "job": "leader"
     }
-    const response = await request.post(`/api/users`, {data: userData});
+    const response = await request.post(`/api/users`, { data: userData });
     expect(response.ok()).toBeTruthy()
 });
 
@@ -41,7 +41,7 @@ test('PUT update user', async ({ request }) => {
         "name": "morpheus",
         "job": "zion resident"
     }
-    const response = await request.put(`/api/users/2`, {data: userData});
+    const response = await request.put(`/api/users/2`, { data: userData });
     expect(response.ok()).toBeTruthy()
 });
 
@@ -50,7 +50,7 @@ test('PATCH update user', async ({ request }) => {
         "name": "morpheus",
         "job": "zion resident"
     }
-    const response = await request.patch(`/api/users/2`, {data: userData});
+    const response = await request.patch(`/api/users/2`, { data: userData });
     expect(response.ok()).toBeTruthy()
 });
 
@@ -64,7 +64,7 @@ test('POST register successful', async ({ request }) => {
         "email": "eve.holt@reqres.in",
         "password": "pistol"
     }
-    const response = await request.post(`/api/register`, {data: userData});
+    const response = await request.post(`/api/register`, { data: userData });
     expect(response.ok()).toBeTruthy()
 });
 
@@ -72,7 +72,7 @@ test('POST register unsuccessful', async ({ request }) => {
     let userData = {
         "email": "sydney@fife"
     }
-    const response = await request.post(`/api/register`, {data: userData});
+    const response = await request.post(`/api/register`, { data: userData });
     expect(response.ok()).not.toBeTruthy()
 });
 
@@ -81,7 +81,7 @@ test('POST login successful', async ({ request }) => {
         "email": "eve.holt@reqres.in",
         "password": "cityslicka"
     }
-    const response = await request.post(`/api/login`, {data: userData});
+    const response = await request.post(`/api/login`, { data: userData });
     expect(response.ok()).toBeTruthy()
 });
 
@@ -89,7 +89,7 @@ test('POST login unsuccessful', async ({ request }) => {
     let userData = {
         "email": "peter@klaven"
     }
-    const response = await request.post(`/api/login`, {data: userData});
+    const response = await request.post(`/api/login`, { data: userData });
     expect(response.ok()).not.toBeTruthy()
 });
 
